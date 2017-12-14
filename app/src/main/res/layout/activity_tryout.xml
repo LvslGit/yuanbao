@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="60dp">
+
+        <Button
+            android:id="@+id/tryoutBackBtn"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:text="返回"
+            android:background="#DEDEDE"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <TextView
+            android:background="#CDCD00"
+            android:layout_width="1dp"
+            android:layout_height="1dp" />
+        <SearchView
+            android:id="@+id/tryoutSearch"
+            android:background="#DEDEDE"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"></SearchView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="20dp">
+
+        <Button
+            android:id="@+id/tryoutAll"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_margin="20dp"
+            android:text="全部"
+            android:layout_gravity="right"
+            android:background="@drawable/ic_launcher_background"
+            />
+        <Button
+            android:id="@+id/tryoutNew"
+            android:text="最新"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/ic_launcher_background"
+            android:layout_width="30dp"
+            android:layout_height="20dp" />
+        <Button
+            android:id="@+id/tryoutValue"
+            android:background="@drawable/ic_launcher_background"
+            android:text="价值"
+            android:layout_marginLeft="70dp"
+            android:layout_width="30dp"
+            android:layout_height="20dp" />
+        <Button
+            android:id="@+id/tryoutRenqi"
+            android:layout_width="30dp"
+            android:background="@drawable/ic_launcher_background"
+            android:text="人气"
+            android:layout_gravity="right"
+            android:layout_marginLeft="70dp"
+            android:layout_height="20dp" />
+    </LinearLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/tryout_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

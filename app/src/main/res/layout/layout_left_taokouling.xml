@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/left_linear"
+        android:layout_width="300dp"
+        android:layout_height="60dp">
+
+        <EditText
+            android:id="@+id/left_taokouling"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="@string/淘口令"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/taokouling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/left_linear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="#FF0000"
+        android:text="点击核对" />
+
+</RelativeLayout>

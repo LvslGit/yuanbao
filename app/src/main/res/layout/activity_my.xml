@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yuanbaojishu.yuanbao.my.MyActivity">
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/black" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17"
+        app:srcCompat="@color/black" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="48dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/grey_normal_bg"
+        android:text="我的试用"
+        android:textAlignment="textStart"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView17" />
+
+    <Button
+        android:id="@+id/more_order_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/grey_normal_bg"
+        android:text="查看更多订单"
+        android:textAlignment="textEnd"
+        android:textColor="@color/grey_text_color_normal"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView18"
+        app:layout_constraintEnd_toEndOf="@+id/imageView18"
+        app:layout_constraintTop_toTopOf="@+id/imageView17" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="0dp"
+        android:layout_height="8dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView18"
+        app:srcCompat="@color/grey_line_bg" />
+
+    <Button
+        android:id="@+id/daizhongjiangBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/grey_normal_bg"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/imageView19"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView18" />
+
+    <Button
+        android:id="@+id/yiwanchengBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/grey_normal_bg"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/imageView19"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView18" />
+
+    <Button
+        android:id="@+id/yizhongjiangBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/grey_normal_bg"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/imageView19"
+        app:layout_constraintEnd_toStartOf="@+id/yiwanchengBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/daizhongjiangBtn"
+        app:layout_constraintTop_toBottomOf="@+id/imageView18" />
+
+    <Button
+        android:id="@+id/jixuBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/grey_normal_bg"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/yizhongjiangBtn"
+        app:layout_constraintEnd_toStartOf="@+id/yizhongjiangBtn"
+        app:layout_constraintStart_toEndOf="@+id/daizhongjiangBtn"
+        app:layout_constraintTop_toTopOf="@+id/yizhongjiangBtn" />
+
+    <Button
+        android:id="@+id/daijiangliBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/grey_normal_bg"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/imageView19"
+        app:layout_constraintEnd_toStartOf="@+id/yiwanchengBtn"
+        app:layout_constraintStart_toEndOf="@+id/yizhongjiangBtn"
+        app:layout_constraintTop_toTopOf="@+id/yizhongjiangBtn" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow"
+        app:srcCompat="@color/black" />
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView19"></TableRow>
+
+    <Button
+        android:id="@+id/mychoujiangBtn"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/grey_normal_bg"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/tableRow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tableRow" />
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/grey_normal_bg"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/tableRow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tableRow" />
+
+    <TextView
+        android:id="@+id/textView66"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:text="我的抽奖"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/tableRow"
+        app:layout_constraintStart_toEndOf="@+id/button20"
+        app:layout_constraintTop_toTopOf="@+id/tableRow" />
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow" />
+
+    <Button
+        android:id="@+id/button21"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/grey_normal_bg"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/tableRow2"
+        app:layout_constraintStart_toStartOf="@+id/tableRow2"
+        app:layout_constraintTop_toTopOf="@+id/tableRow2" />
+
+    <TextView
+        android:id="@+id/textView67"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:text="我的收益"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/tableRow2"
+        app:layout_constraintStart_toEndOf="@+id/button21"
+        app:layout_constraintTop_toTopOf="@+id/tableRow2" />
+
+    <Button
+        android:id="@+id/myshouyiBtn"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/grey_normal_bg"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/tableRow2"
+        app:layout_constraintEnd_toEndOf="@+id/tableRow2"
+        app:layout_constraintTop_toTopOf="@+id/tableRow2" />
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView21" />
+
+    <Button
+        android:id="@+id/button23"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/grey_normal_bg"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/tableRow3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tableRow3" />
+
+    <TextView
+        android:id="@+id/textView68"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:text="联系客服"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/tableRow3"
+        app:layout_constraintStart_toEndOf="@+id/button23"
+        app:layout_constraintTop_toTopOf="@+id/tableRow3" />
+
+    <Button
+        android:id="@+id/kefuBtn"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/grey_normal_bg"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/tableRow3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tableRow3" />
+
+    <TextView
+        android:id="@+id/textView69"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:text="400 8888 8888"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/tableRow3"
+        app:layout_constraintEnd_toStartOf="@+id/kefuBtn"
+        app:layout_constraintTop_toTopOf="@+id/tableRow3" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow2"
+        app:srcCompat="@color/black" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow3"
+        app:srcCompat="@color/grey_line_bg" />
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView22" />
+
+    <Button
+        android:id="@+id/button25"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/grey_normal_bg"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/tableRow4"
+        app:layout_constraintStart_toStartOf="@+id/tableRow4"
+        app:layout_constraintTop_toTopOf="@+id/tableRow4" />
+
+    <TextView
+        android:id="@+id/textView70"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:text="我的邀请"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/tableRow4"
+        app:layout_constraintStart_toEndOf="@+id/button25"
+        app:layout_constraintTop_toTopOf="@+id/tableRow4" />
+
+    <Button
+        android:id="@+id/yaoqingBtn"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/grey_normal_bg"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/tableRow4"
+        app:layout_constraintEnd_toEndOf="@+id/tableRow4"
+        app:layout_constraintTop_toTopOf="@+id/tableRow4" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow4"
+        app:srcCompat="@color/black" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/original_border_color" />
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView17"
+        app:layout_constraintStart_toStartOf="@+id/imageView24"
+        app:layout_constraintTop_toTopOf="@+id/imageView24"
+        app:srcCompat="@mipmap/adventure" />
+
+    <TextView
+        android:id="@+id/nicknameSet_set"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="被宠坏的耳朵"
+        android:textColor="@color/grey_normal_bg"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/photo"
+        app:layout_constraintTop_toTopOf="@+id/imageView24" />
+
+    <ImageButton
+        android:id="@+id/checkBtn"
+        android:layout_width="48dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/photo"
+        app:layout_constraintTop_toBottomOf="@+id/nicknameSet_set"
+        app:srcCompat="@mipmap/moba" />
+
+    <Button
+        android:id="@+id/moneyBtn"
+        android:layout_width="24dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@mipmap/action"
+        android:text="Button"
+        app:layout_constraintEnd_toStartOf="@+id/setBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/setBtn"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/grey_normal_bg"
+        android:text="设置"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

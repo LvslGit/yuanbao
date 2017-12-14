@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yuanbaojishu.yuanbao">
+
+    <!-- Glide相关权限配置 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- 短信验证码添加权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- 微信接口权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 获取本机号码权限 -->
+    <uses-permission android:name="READ_PHONE_STATE" />
+    <!-- 头像设置 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.mob.MobApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".prise.PriseActivity" />
+        <activity android:name=".tryout.TryoutActivity" />
+        <activity android:name=".tryout.TryoutDetailActivity" />
+        <activity android:name=".tryout.ApplicationActivity" />
+        <activity
+            android:name=".my.RegisterActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!-- appkey和appSecret -->
+        <meta-data
+            android:name="Mob-AppKey"
+            android:value="11f8e73cd1a1c" />
+        <meta-data
+            android:name="Mob-AppSecret"
+            android:value="ac3ad611934a934ed4b5121066637f6a" />
+
+        <activity android:name=".my.WelcomeActivity" />
+        <activity android:name=".my.LoginActivity" />
+        <activity
+            android:name=".my.WXEntryActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity android:name=".my.ForgetActivity" />
+        <activity android:name=".my.ChangePwdActivity" />
+        <activity android:name=".my.MyActivity" />
+        <activity android:name=".my.SetActivity" />
+        <activity android:name=".my.AccountActivity" />
+        <activity android:name=".my.TaobaoActivity" />
+        <activity android:name=".my.NicknameActivity" />
+        <activity android:name=".my.CheckInActivity"></activity>
+    </application>
+
+</manifest>
